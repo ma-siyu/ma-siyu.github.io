@@ -19,13 +19,14 @@ body {
 }
 .fly-in-text li {
     display: inline-block;
+    width: 14%;
     margin-right: 50px;
     font-family: Open Sans, Arial;
     font-weight: 300;
     font-size: 4em;
     color: #fff;
     opacity: 1;
-    transition: all 5.0s ease;
+    transition: all 2.5s ease;
 }
 .fly-in-text li:last-child {
     margin-right: 0;
@@ -33,7 +34,7 @@ body {
 .fly-in-text.hidden li {
     opacity: 0;
 }
-.fly-in-text.hidden li:nth-child(1) { transform: translateX(200px) translateY(200px); }
+.fly-in-text.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
 .fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
 .fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
 .fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
