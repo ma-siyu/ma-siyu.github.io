@@ -12,24 +12,25 @@ body {
 }
 .fly-in-text {
     list-style: none;
-    position: absolute;
-    left: 20%;
-    top: 50%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
     transform: translateX(-50%) translateY(-50%);
+}
+.fly-in-text li:first-child {
+    margin-left: 5%;
 }
 .fly-in-text li {
     display: inline-block;
     width: 10%;
-    margin-right: 50px;
+    margin-right: 5%;
     font-family: Open Sans, Arial;
     font-weight: 300;
     font-size: 4em;
     color: #fff;
     opacity: 1;
-    transition: all 2.5s ease;
-}
-.fly-in-text li:last-child {
-    margin-right: 0;
+    transition: all 0.5s ease;
 }
 .fly-in-text.hidden li {
     opacity: 0;
