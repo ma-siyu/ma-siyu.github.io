@@ -45,9 +45,21 @@ body {
 .fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
 .fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
 
+.button1 {
+  border-radius: 12px;
+  background-color: white;
+  border: 2px solid #e7e7e7;
+  visibility: hidden;
+}
+
+.button2 {
+  border-radius: 12px;
+  background-color: green;
+  border: 2px solid #4CAF50;
+}
 
 @media only screen and (min-width: 1000px) {
   .fly-in-text {
-    margin-top: 30%;
+    margin-top: 20%;
   }
 }

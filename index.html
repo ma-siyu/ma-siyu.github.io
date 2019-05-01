@@ -6,7 +6,7 @@
         <title>Welcome</title>
 
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
 
 
     </head>
@@ -21,6 +21,8 @@
             <li>M</li>
             <li>E</li>
         </ul>
+        <button type="button" name="button1">More about me</button>
+        <button type="button" name="button2">Nah, maybe next time</button>
       </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -30,6 +32,12 @@
                 setTimeout(function() {
                     $('.fly-in-text').removeClass('hidden');
                 }, 500);
+            })();
+
+            $(function() {
+                setTimeout(function() {
+                    document.getElementById("more").style.visibility='visible';
+                }, 700);
             })();
         </script>
 
