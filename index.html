@@ -21,8 +21,11 @@
             <li>M</li>
             <li>E</li>
         </ul>
-        <button type="button" name="button1">More about me</button>
-        <button type="button" name="button2">Nah, maybe next time</button>
+      </div>
+
+      <div class="buttons">
+        <button class="knowmore" id="knowmore">More about me</button>
+        <button class="nah" id="nah">Nah, maybe next time</button>
       </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -39,6 +42,18 @@
                     document.getElementById("more").style.visibility='visible';
                 }, 700);
             })();
+        </script>
+
+        <script type="text/javascript">
+            document.getElementById("knowmore").onclick = function(){
+              location.href = "profile.html"
+            }
+        </script>
+
+        <script type="text/javascript">
+            document.getElementById("nah").onclick = function(){
+              location.href = "https://github.com/ma-siyu/"
+            }
         </script>
 
     </body>
